@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Audio player</title>
+  </head>
+  <body>
+    <main>
+      <img src="./assets/img/lemonade.png" alt="background" class="bg" />
+      <audio src="./assets/audio/beyonce.mp3" class="audio audio-1"></audio>
+      <div class="container">
+        <div class="player">
+          <button class="play-btn">
+          </button>
+          <button class="other-btns forward">
+          <img
+            src="./assets/svg/forward.png"
+            alt="forward"
+          />
+          </button>
+          <button class="other-btns backward">
+          <img 
+            src="./assets/svg/backward.png"
+            alt="backward"
+          />
+          </button>
+          <div class="artist"><span>Beyonce</span></div>
+          <div class="song-name"><span>Don't Hurt Yourself</span></div>
+          <input
+            type="range"
+            class="progress-bar"
+            min="0"
+            max="233.717551"
+            value="0"
+          />
+          <div class="current-time">0:00</div>
+          <div class="full-time"></div>
+          </div>
+        </div>
+      </div>
+     
+    </main>
+    <footer class="footer">
+          <a href="https://github.com/shishel-zaitcevich" class = "school">github</a>
+          <p>2022</p>
+          <a href="https://rs.school/js-stage0/" class = "school">
+            RSS</a>
+      </footer> 
+      <script src="./index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,197 @@
+html,
+body,
+main{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: #000;
+    overflow: hidden;
+    position: relative;
+    height: 100vh;
+}
+
+main{
+    max-width: 1920px;
+    box-sizing: border-box;
+}
+
+.bg {
+    margin: auto;
+    filter: blur(10px);
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.audio {
+    display: none;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 250pt;
+    height: 300pt;
+    background: url(./assets/img/lemonade.png);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px black;
+}
+
+.player{
+    width: 100%;
+    height: 30%;
+    background-image: -webkit-linear-gradient(45deg, rgb(40, 40, 40), rgb(133, 133, 133));
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 70%;
+}
+
+.play-btn{
+    position: absolute;
+    filter: invert(1);
+    cursor: pointer;
+    bottom: 40%;
+    left: 5%;
+    z-index: 4;
+    transition: .3s;
+    background: none;
+    border: 0;
+    background-image: url(./assets/svg/play.png);
+    width: 50px;
+    height: 50px;
+    background-position: center;
+    background-size: cover;
+}
+
+.play-btn:hover,
+.play-btn:active,
+.pause:hover,
+.pause:active,
+.other-btns:hover,
+.other-btns:active{
+    filter: invert(85%) sepia(93%) saturate(7496%) hue-rotate(16deg) brightness(96%) contrast(101%);
+}
+
+ .pause {
+    background-image: url("./assets/svg/pause.png");
+    }    
+
+.other-btns {
+    position: absolute;
+    filter: invert(1);
+    cursor: pointer;
+    z-index: 4;
+    transition: .3s;
+    border: none;
+    background: none;
+}
+
+.other-btns img {
+    width: 30px;
+    height: 30px;
+}
+
+.forward{
+    bottom: 40%;
+    right: 10%;
+}
+
+.backward{
+    bottom: 65%;
+    right: 10%;
+}
+
+.artist{
+    position: absolute;
+    z-index: 4;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    bottom: 65%;
+    left: 28%;
+    color: rgb(193, 255, 6);
+}
+
+.song-name{
+    position: absolute;
+    z-index: 4;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    bottom: 45%;
+    left: 28%;
+    color: white;
+}
+
+.progress-bar{
+    position: absolute;
+    z-index: 4;
+    height: 5px;
+    background: #000000;
+    width: 160pt;
+    bottom: 18%;
+    left: 20%;
+    border-radius: 30px;
+    appearance: none;
+}
+
+.current-time{
+    position: absolute;
+    z-index: 4;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    bottom: 3%;
+    left: 20%;
+    color: white;
+}
+
+.full-time{
+    position: absolute;
+    z-index: 4;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    bottom: 25%;
+    right: 15%;
+    color: rgb(193, 255, 6);
+}
+
+.footer{
+    margin: 0;
+    display: flex;
+    max-width: 1920px;
+    height: 50px;
+    padding: 0;
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    z-index: 6;
+    color: white;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer a{
+    color: white;
+    text-decoration: none;
+}
+
+.school {
+    margin-right: 20px;
+}
+
+.footer p {
+    margin-right: 20px;
+}
